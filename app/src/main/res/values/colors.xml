@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FB4C47</color>
+    <color name="colorPrimaryDark">#FB4C47</color>
+    <color name="colorAccent">#035755</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightText">#7A7E93</color>
+    <color name="colorGray">#EBEBEB</color>
+    <color name="colorLoader">#F7395B</color>
+    <color name="colorNavigationTitle">#212121</color>
+    <color name="colorProgressYellow">#FFC212</color>
+    <color name="colorProgressGreen">#34D747</color>
+    <color name="colorProgressRed">#F6385A</color>
+    <color name="colorWaterProgress">#0AAFFF</color>
+    <color name="colorWaterProgressText">#00285A</color>
+    <color name="colorAlert">#FF8F2B</color>
+    <color name="colorCellText">#949498</color>
+    <color name="colorTextYellow">#f8bb33</color>
+    <color name="colorCellBackground">#23232D</color>
+    <color name="colorTextFieldBottomLine">#E0E0E0</color>
+    <color name="colorLightBackground">#F8F8F8</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">#035755</color>
+    <color name="textHistory">#8C325279</color>
+</resources>

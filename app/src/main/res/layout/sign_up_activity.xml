@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_6sdp"
+                android:src="@drawable/ic_left_arrow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewBack"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/label_sign_up"
+                android:textAppearance="@style/AveriaLibreBold"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_27sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewSubDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitle"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/averia_libre_light"
+                android:gravity="start"
+                android:padding="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/label_we_will_require_your_information_to_match_with_government_data"
+                android:textAppearance="@style/AveriaLibreRegular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSubDesc"
+                android:layout_margin="@dimen/_6sdp"
+                android:hint="@string/label_name"
+                android:textColorHint="@color/colorAccent"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/colorAccent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="@style/AveriaLibreBold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_13sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerState"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/inputLayoutName" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerState"
+                android:layout_margin="@dimen/_6sdp"
+                android:hint="@string/label_city"
+                android:textColorHint="@color/colorAccent"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/colorAccent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="@style/AveriaLibreBold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_13sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputLayoutCity"
+                android:layout_margin="@dimen/_6sdp"
+                android:hint="@string/label_phone_no"
+                android:textColorHint="@color/colorAccent"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/colorAccent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="@style/AveriaLibreBold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_13sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutAadharNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputLayoutPhoneNo"
+                android:layout_margin="@dimen/_6sdp"
+                android:hint="@string/label_aadhar_no"
+                android:textColorHint="@color/colorAccent"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/colorAccent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="@style/AveriaLibreBold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_13sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTermsAndCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputLayoutAadharNo"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/averia_libre_light"
+                android:gravity="start"
+                android:padding="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/label_by_continuing_you_agree_to_covid_s_19_terms_amp_conditions_and_privacy_policy"
+                android:textAppearance="@style/AveriaLibreRegular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTermsAndCondition"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rounded_shape"
+                android:text="@string/button_sign_up"
+                android:textAllCaps="true"
+                android:textAppearance="@style/AveriaLibreBold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:cornerRadius="@dimen/_20sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonSignUp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/label_have_an_account_login"
+                android:textAppearance="@style/AveriaLibreBold"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_17sdp" />
+        </RelativeLayout>
+    </ScrollView>
+</layout>

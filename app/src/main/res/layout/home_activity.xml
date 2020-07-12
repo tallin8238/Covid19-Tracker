@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="start|center"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:text="@string/label_covid_tracker"
+            android:textAppearance="@style/AveriaLibreBold"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_27sdp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSetting"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewSetting"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_setting" />
+        </androidx.cardview.widget.CardView>
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calenderView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewSetting"
+            app:mcv_arrowColor="@color/colorWhite"
+            app:mcv_calendarMode="week"
+            app:mcv_dateTextAppearance="@style/Date"
+            app:mcv_firstDayOfWeek="sunday"
+            app:mcv_selectionColor="@color/textHistory"
+            app:mcv_showOtherDates="all" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonLogEntry"
+            android:layout_below="@+id/calenderView"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_10sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/home_layout_item" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLogEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/rounded_shape"
+            android:text="@string/label_log_entry"
+            android:textAllCaps="true"
+            android:textAppearance="@style/AveriaLibreBold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"
+            app:cornerRadius="@dimen/_20sdp" />
+
+    </RelativeLayout>
+</layout>

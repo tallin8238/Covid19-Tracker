@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_6sdp"
+                android:src="@drawable/ic_left_arrow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewBack"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/label_settings"
+                android:textAppearance="@style/AveriaLibreBold"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_27sdp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitle"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/colorWhite"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/label_about_covid"
+                        android:textAppearance="@style/AveriaLibreBold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_18sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_right_arrow" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewAbout"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/colorWhite"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/label_report"
+                        android:textAppearance="@style/AveriaLibreBold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_18sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_right_arrow" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewReport"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rounded_shape"
+                android:backgroundTint="#FEE6E5"
+                android:text="@string/label_log_out"
+                android:textAllCaps="true"
+                android:textAppearance="@style/AveriaLibreBold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp"
+                app:cornerRadius="@dimen/_20sdp" />
+        </RelativeLayout>
+    </ScrollView>
+</layout>

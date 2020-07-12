@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_6sdp"
+                android:src="@drawable/ic_left_arrow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewBack"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/label_verify"
+                android:textAppearance="@style/AveriaLibreBold"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_27sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/averia_libre_light"
+                android:gravity="start"
+                android:padding="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/label_we_have_sent_an_otp_to_your_number"
+                android:textAppearance="@style/AveriaLibreRegular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSubTitle"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/averia_libre_light"
+                android:gravity="start"
+                android:padding="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/label_please_enter_otp_to_get_access_to_the_app"
+                android:textAppearance="@style/AveriaLibreRegular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutOtp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/textViewDesc"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutOtp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rounded_shape"
+                android:text="@string/label_enter"
+                android:textAllCaps="true"
+                android:textAppearance="@style/AveriaLibreBold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:cornerRadius="@dimen/_20sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonResendOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonEnter"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rounded_shape"
+                android:backgroundTint="#FEE6E5"
+                android:text="@string/label_resend_otp"
+                android:textAllCaps="true"
+                android:textAppearance="@style/AveriaLibreBold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp"
+                app:cornerRadius="@dimen/_20sdp" />
+        </RelativeLayout>
+    </ScrollView>
+</layout>

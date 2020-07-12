@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/label_fight_covid_19"
+            android:textAppearance="@style/AveriaLibreBold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_22sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitle"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/label_together_with_ncovidtracker"
+            android:textAppearance="@style/AveriaLibreBold"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_18sdp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCovid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_below="@+id/textViewSubTitle"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_stay_home_girl" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSubDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewCovid"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/label_covid_tracker_helps_government_to_tracking_human_s_travel_history"
+            android:textAppearance="@style/AveriaLibreRegular"
+            android:textSize="@dimen/_16sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLetStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/rounded_shape"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:textAppearance="@style/AveriaLibreBold"
+            android:text="@string/label_let_s_start"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"
+            app:cornerRadius="@dimen/_20sdp" />
+    </RelativeLayout>
+</layout>
